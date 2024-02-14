@@ -1,9 +1,9 @@
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="classes.Tasks" %><%--
   Created by IntelliJ IDEA.
-  User: VivoBook
-  Date: 07.02.2024
-  Time: 11:51
+  User: Asus
+  Date: 14.02.2024
+  Time: 23:58
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -22,9 +22,9 @@
             <input type="text" name="name" class="form-control" readonly value="<%=task.getName()%>">
             <label class="form-label">Описание:</label>
             <textarea name="description" class="form-control" rows="3" readonly><%=task.getDescription()%></textarea>
-            <label class="form-label">Крайний срок:</label>
+            <label class="form-label">Дедлайн:</label>
             <input type="date" name="deadline" class="form-control" readonly value="<%=task.getDeadlineDate()%>">
-            <label class="form-label">Выполнено:</label>
+            <label class="form-label">Сделано:</label>
             <select id="status" class="form-select">
                 <option value="true" <%= task.isStatus() ? "selected" : "" %>>true</option>
                 <option value="false" <%= !task.isStatus() ? "selected" : "" %>>false</option>
